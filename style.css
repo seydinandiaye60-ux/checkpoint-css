@@ -1,0 +1,191 @@
+
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #151515;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+
+.header {
+    background-color: #202020;
+    padding: 20px 8%;
+    border-bottom: 1px solid #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f4a261;
+}
+
+/* INLINE NAVIGATION */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f4a261;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HERO SECTION */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+}
+
+.subtitle {
+    color: #f4a261;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 900;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #f4a261;
+}
+
+.hero p:last-child {
+    color: #aaaaaa;
+    font-size: 16px;
+}
+
+/* MENU SECTIONS */
+
+.menu-section {
+    background-color: #202020;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    scroll-margin-top: 30px;
+}
+
+.menu-section h2 {
+    color: #f4a261;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.section-description {
+    color: #999999;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* MENU ITEMS */
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #383838;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item strong {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.menu-item p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #202020;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    color: #888888;
+    font-size: 13px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .menu-section {
+        padding: 22px;
+    }
+}
